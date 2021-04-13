@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Tables</title>
+</head>
+<body style="padding:100px">
+    <header style="margin:auto; display:flex; flex-flow:column; align-items:center">
+        <h1 style="display:flex">Reservation System</h1>
+        <h2 style="display:flex">Current Reservations and Waiting List</h2>
+        <div style="display:flex">
+            <button>Home</button>
+            <button>Make Reservation</button>
+        </div>
+    </header>
+    <div style="display:flex; flex-flow:column">
+        <h3>Current Reservations:</h3>
+        <div style="display:flex; flex-flow:column" id="table-list">
+            
+        </div>
+        <h3>Waiting List:</h3>
+        <div style="display:flex; flex-flow:column" id="wait-list">
+            
+        </div>
+    </div>
+</body>
+<script src="../lib/tables.js"></script>
+</html>
