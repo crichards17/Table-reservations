@@ -45,6 +45,10 @@ describe('CustomerManager', () => {
 			if(i === 5){
 				customer.name = "Henry V";
 			}
+			if(i === 6){
+				customer.name = "Henry VI";
+			}
+
 			manager.addNewCustomer(customer);
 		}
 		let tables = manager.getTables();
@@ -54,10 +58,13 @@ describe('CustomerManager', () => {
 		expect(waitlist.length).toEqual(5);
 		expect(customers.length).toEqual(10);
 
-		manager.removeCustomerFromTable(4);
-		table = manager.getTables();
-		//expect()
+		expect(tables[4].customer.name).toEqual("Charles IV");
+		expect(waitlist[0].name).toEqual("Henry V");
 
+		manager.removeCustomerFromTable(5);
+		tables = manager.getTables();
+		expect(tables[4].customer.name).toEqual("Henry V");
+		expect(waitlist[0].name).toEqual("Henry VI");
 	});
 
 });
