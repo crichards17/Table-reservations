@@ -4,13 +4,13 @@ describe('Customer', () => {
 	it('should have a name, number, email address and unique id', () => {
 		const customer = new Customer();
 		customer.name = 'John';
-		customer.number = 123465789;
+		customer.phone = 123465789;
 		customer.email = 'john@email.com';
-		customer.uniqueId = 102456;
+		customer.id = 102456;
 		expect(customer instanceof Customer).toBe(true);
 		expect('name' in customer).toBe(true);
-		expect('number' in customer).toBe(true);
+		expect('phone' in customer).toBe(true);
 		expect('email' in customer).toBe(true);
-		expect('uniqueId' in customer).toBe(true);
+		expect('id' in customer).toBe(true);
 	});
 });
