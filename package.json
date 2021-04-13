@@ -1,0 +1,27 @@
+{
+  "name": "table-reservations",
+  "version": "1.0.0",
+  "description": "A simple table reservation app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crichards17/Table-reservations.git"
+  },
+  "keywords": [
+    "reservations",
+    "table",
+    "dinner"
+  ],
+  "author": "n8blake, crichards17, AaronB22, ru14",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crichards17/Table-reservations/issues"
+  },
+  "homepage": "https://github.com/crichards17/Table-reservations#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
